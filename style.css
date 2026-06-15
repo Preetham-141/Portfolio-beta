@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    height:4rem;
+    width: 100%;
+    position:absolute;
+    text-align:right;
+    z-index:10;
+}
+
+.header p{
+    color:white;
+    font-size: 1rem;
+    line-height: 4rem;
+    font-family:Poppins, sans-serif;
+    padding-right: 4rem;
+}
+
+.hero{
+    position:relative;
+    top:0;
+    left:0;
+    height:100vh;
+    overflow: hidden;
+}
+
+.hero video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.hero-content{
+    position: absolute;
+    top:30%;
+    left:3%;
+    font-size:large;
+    font-family:Poppins, sans-serif;
+    background-color: black;
+    color:white;
+    padding:1rem;
+    border-radius: 2rem;
+    z-index: 8;
+}
+
+.profile-pic{
+    position:absolute;
+    top:50%;
+    left:35%;
+    height: 70%;
+    width:35%;
+    background-image: url("Zor0.jpeg");
+    background-size: cover;
+    transform:translate(-45%,-45%);
+    background-color: white;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.rotating-ring{
+    position: absolute;
+    top:8.7%;
+    left:14.25%;
+    height: 90%;
+    width:45%;
+    background-image: url("Sigil.png");
+    background-size: cover;
+    /* border-right: 1rem solid white; */
+    border-radius: 50%;
+    animation: rotate 20s infinite;
+    z-index: 2;
+}
+
+@keyframes  rotate {
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.perspective-divs{
+    height: 80%;
+    width:60%;
+    /* background-color: white; */
+    position: absolute;
+    top:13.4%;
+    left:34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap:7%;
+}
+
+.pbox{
+    height:11%;
+    width:50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: Poppins , sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: path("M 0,10 L 40,10 L 45,0 L 360,0 L 310,50  L 0,70 L 0,10 Z");
+    border: 2px solid white;
+    border-radius: 0.2em;
+}
+
+#pbox1{
+    margin-left: 40%;
+    animation: slide1 2.8s ease-in 1;
+}
+
+#pbox2{
+    margin-left: 45%;
+    animation: slide2 2.2s ease-in 1;
+}
+
+#pbox3{
+    margin-left: 50%;
+    animation: slide3 2s ease-in 1; 
+}
+
+#pbox4{
+    margin-left: 45%;
+    animation: slide4 2.2s ease-in 1;
+}
+
+#pbox5{
+    margin-left: 40%;
+    animation: slide5 2.8s ease-in 1;
+}
+
+.pbox a{
+    margin-right: 7em;
+}
+
+.pbox:hover{
+    background-color: white;
+    color:black;
+    border: 2.5px solid black;
+}
+
+@keyframes slide1 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 40%;
+    }
+}
+
+@keyframes slide2 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 45%;
+    }
+}
+
+@keyframes slide3 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 50%;
+    }
+}
+
+@keyframes slide4 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 45%;
+    }
+}
+
+@keyframes slide5 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 40%;
+    }
+}
