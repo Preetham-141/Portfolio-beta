@@ -17,6 +17,7 @@
     line-height: 4rem;
     font-family:Poppins, sans-serif;
     padding-right: 4rem;
+    text-shadow: 0 0 4px white;
 }
 
 .hero{
@@ -46,6 +47,7 @@
     z-index: 8;
 }
 
+
 .profile-pic{
     position:absolute;
     top:50%;
@@ -56,24 +58,26 @@
     background-size: cover;
     transform:translate(-45%,-45%);
     background-color: white;
-    border: 4px solid black;
+    /* border: 4px solid black; */
     border-radius: 50%;
+    box-shadow: 0 0 20px white;
     z-index: 4;
 }
 
-.rotating-ring{
+.sigil{
     position: absolute;
     top:8.7%;
-    left:14.25%;
+    left:14.2%;
     height: 90%;
     width:45%;
     background-image: url("Sigil.png");
     background-size: cover;
-    /* border-right: 1rem solid white; */
     border-radius: 50%;
     animation: rotate 40s infinite;
     z-index: 2;
 }
+
+
 
 @keyframes  rotate {
     from{
@@ -103,7 +107,7 @@
     height:11%;
     width:50%;
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    color:white;
     font-family: Poppins , sans-serif;
     display:flex;
     justify-content: center;
@@ -111,42 +115,46 @@
     clip-path: path("M 0,10 L 40,10 L 45,0 L 360,0 L 310,50  L 0,70 L 0,10 Z");
     border: 2px solid white;
     border-radius: 0.2em;
+    transition: 0.8s;
 }
 
 #pbox1{
     margin-left: 40%;
-    animation: slide1 2.8s ease-in 1;
+    animation: slide1 2.8s ease-in-out 1;
 }
 
 #pbox2{
     margin-left: 45%;
-    animation: slide2 2.2s ease-in 1;
+    animation: slide2 2.2s ease-in-out 1;
 }
 
 #pbox3{
     margin-left: 50%;
-    animation: slide3 2s ease-in 1; 
+    animation: slide3 2s ease-in-out 1; 
 }
 
 #pbox4{
     margin-left: 45%;
-    animation: slide4 2.2s ease-in 1;
+    animation: slide4 2.2s ease-in-out 1;
 }
 
 #pbox5{
     margin-left: 40%;
-    animation: slide5 2.8s ease-in 1;
+    animation: slide5 2.8s ease-in-out 1;
 }
 
-.pbox a{
+.pbox p{
     margin-right: 7em;
+    text-shadow: 0 0 4px white;
 }
+
 
 .pbox:hover{
     background-color: white;
     color:black;
     border: 2.5px solid black;
     cursor: pointer;
+    transform: scale(1.15);
 }
 
 @keyframes slide1 {

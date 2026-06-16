@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 
         <div class="profile-pic"></div>
 
-        <div class="rotating-ring"></div>
+        <div class="sigil"></div>
 
         <video autoplay muted loop playsinline >
             <source src="street-lights.mp4">
@@ -27,23 +27,24 @@
         </span>
 
         <div class="perspective-divs">
-            <div id="pbox1" class="pbox">
-                <a>About me</a>
+            <div id="pbox1" class="pbox" data-page="AboutMe.html">
+                <p>About me</p>
             </div>
-            <div id="pbox2" class="pbox">
-                <a>Skills</a>
+            <div id="pbox2" class="pbox" data-page="Skills.html">
+                <p>Skills</p>
             </div>
-            <div id="pbox3" class="pbox">
-                <a>Projects</a>
+            <div id="pbox3" class="pbox" data-page="Projects.html">
+                <p>Projects</p>
             </div>
-            <div id="pbox4" class="pbox">
-                <a>Resume</a>
+            <div id="pbox4" class="pbox" data-page="Resume.html">
+                <p>Resume</p>
             </div>
-            <div id="pbox5" class="pbox">
-                <a>Contact</a>
+            <div id="pbox5" class="pbox" data-page="ContactMe.html">
+                <p>Contact</p>
             </div>
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
