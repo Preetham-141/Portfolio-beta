@@ -29,7 +29,6 @@ body{
     left:0;
     height:100vh;
     overflow: hidden;
-
 }
 
 .hero video{
@@ -52,15 +51,22 @@ body{
 }
 
 
+.dp-container{
+    position: absolute;
+    top:52%;
+    left:38%;
+    width:87vmin;
+    aspect-ratio: 1/1;
+    transform: translate(-50%,-50%);
+    z-index: 4;
+}
 .profile-pic{
     position:absolute;
-    top:50%;
-    left:35%;
-    height: 70%;
-    width:35%;
+    aspect-ratio: 1/1;
+    inset:11%;
+    width:78%;
     background-image: url("Zor0.jpeg");
     background-size: cover;
-    transform:translate(-45%,-45%);
     background-color: white;
     /* border: 4px solid black; */
     border-radius: 50%;
@@ -70,10 +76,8 @@ body{
 
 .sigil{
     position: absolute;
-    top:8.7%;
-    left:14.2%;
-    height: 90%;
-    width:45%;
+    inset:0;
+    aspect-ratio: 1/1;
     background-image: url("Sigil.png");
     background-size: cover;
     border-radius: 50%;
