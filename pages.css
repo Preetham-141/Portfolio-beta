@@ -6,9 +6,11 @@
 .header{
     height:4rem;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: black;
     position:absolute;
-    text-align:right;
     z-index:10;
 }
 
@@ -18,5 +20,31 @@
     line-height: 4rem;
     font-family:Poppins, sans-serif;
     padding-right: 4rem;
+    margin-left: 16%;
     text-shadow: 0 0 4px white;
+}
+
+.menu{
+    width:45%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28%;
+    gap:8%;
+}
+
+.menu a{
+    font-size: 1rem;
+    line-height: 4rem;
+    font-family:Poppins, sans-serif;
+    color:white;
+    text-decoration: none;
+    
+}
+
+.menu a:hover{
+    cursor: pointer;
+    text-shadow: 0 0 4px white;
+    font-size: 1.2rem;
 }
