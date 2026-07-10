@@ -210,6 +210,119 @@ body{
     }
 }
 
+
+
+@media (max-width: 768px){
+
+    .hero-content{
+    top:30%;
+    left:3%;
+    font-size:70%;
+    padding:1rem;
+    border-radius: 2rem;
+}
+
+
+.dp-container{
+    top:44%;
+    left:42%;
+    width:60vmin;
+}
+
+
+
+.perspective-divs{
+    height: 40%;
+    width:30%;
+    /* background-color: white; */
+    top:42%;
+    left:58%;
+    gap:7%;
+}
+
+.pbox{
+    height:10%;
+    width:80%;
+    clip-path: path("M 0,10 L 40,10 L 45,0 L 185,0 L 170,20  L 0,70 L 0,10 Z");
+}
+
+#pbox1{
+    margin-left: 50%;
+    animation: slide1 2.8s ease-in-out 1;
+}
+
+#pbox2{
+    margin-left: 40%;
+    animation: slide2 2.2s ease-in-out 1;
+}
+
+#pbox3{
+    margin-left: 25%;
+    animation: slide3 2s ease-in-out 1; 
+}
+
+#pbox4{
+    margin-left: 0;
+    animation: slide4 2.2s ease-in-out 1;
+}
+
+#pbox5{
+    margin-left: -40%;
+    animation: slide5 2.8s ease-in-out 1;
+}
+
+.pbox p{
+    font-size: 50%;
+    margin-left:25%;
+}
+
+@keyframes slide1 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 50%;
+    }
+}
+
+@keyframes slide2 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 40%;
+    }
+}
+
+@keyframes slide3 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 25%;
+    }
+}
+
+@keyframes slide4 {
+    from{
+        margin-left: -10%;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+
+@keyframes slide5 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -40%;
+    }
+}
+
+}
+
 @media (max-width: 480px){
     
     .hero{
@@ -237,10 +350,11 @@ body{
 .hero-content{
     top:28%;
     left:4%;
-    font-size:50%;
+    font-size:45%;
     padding:4%;
     border-radius: 1.8rem;
 }
+
 
 
 .dp-container{
@@ -269,11 +383,82 @@ body{
 }
 
 
-
+#pbox1{
+    margin-left: 40%;
+    animation: slide1 2.8s ease-in-out 1;
 }
 
-@media (max-width: 768px){
-    
+#pbox2{
+    margin-left: 50%;
+    animation: slide2 2.2s ease-in-out 1;
+}
+
+#pbox3{
+    margin-left: 60%;
+    animation: slide3 2s ease-in-out 1; 
+}
+
+#pbox4{
+    margin-left: 50%;
+    animation: slide4 2.2s ease-in-out 1;
+}
+
+#pbox5{
+    margin-left: 40%;
+    animation: slide5 2.8s ease-in-out 1;
+}
+
+.pbox p{
+    font-size: 80%;
+    margin-right: 50%;
+    text-shadow: 0 0 4px white;
+}
+
+@keyframes slide1 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 40%;
+    }
+}
+
+@keyframes slide2 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 50%;
+    }
+}
+
+@keyframes slide3 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 60%;
+    }
+}
+
+@keyframes slide4 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 50%;
+    }
+}
+
+@keyframes slide5 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 40%;
+    }
+}
+
 }
 
 @media (max-width: 1024px){
